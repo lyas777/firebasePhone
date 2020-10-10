@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "login-ng-17bb7": {
+      "hosting": {
+        "firebasePhone": [
+          "login-ng-17bb7"
+        ]
+      }
+    }
+  }
+}

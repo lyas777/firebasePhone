@@ -1,0 +1,26 @@
+<div>
+    <h1>Registro de usuarios por número de celular con Angular y Firebase</h1>
+    <form [formGroup]="registerForm" (ngSubmit)="sendOTP()">
+        <div>
+            <label for="exampleInputLastName">Número de teléfono</label><br>
+            <input formControlName="phone_number" type="text" maxlength="12">
+        </div>
+        <div id="recaptcha-container"></div>
+        <button type="submit">Sms text Login code</button>
+    </form>
+    <br>
+    <div>
+        <form [formGroup]="code">
+            <label for="code">Enter your Verification Code Here</label><br>
+            <input formControlName="codeVerification" type="text" name="code" id="" class="input"><br>
+            <button [disabled]="disableOTPSendButton" (click)=" verifyOTP()">Verificado</button>
+        </form>
+
+    </div>
+
+    <div *ngIf="user" style="margin-top: 30px;">
+        Bienvenido te registraste exitosamente!!
+        <p> Este es tu UserId: {{ user?.uid }}</p>
+
+    </div>
+</div>
