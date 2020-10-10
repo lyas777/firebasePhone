@@ -6,14 +6,14 @@
             <input formControlName="phone_number" type="text" maxlength="12">
         </div>
         <div id="recaptcha-container"></div>
-        <button type="submit">Sms text Login code</button>
+        <button type="submit">Enviar</button>
     </form>
     <br>
     <div>
         <form [formGroup]="code">
             <label for="code">Enter your Verification Code Here</label><br>
             <input formControlName="codeVerification" type="text" name="code" id="" class="input"><br>
-            <button [disabled]="disableOTPSendButton" (click)=" verifyOTP()">Verificado</button>
+            <button [disabled]="disableOTPSendButton" (click)=" verifyOTP()">Validar</button>
         </form>
 
     </div>
