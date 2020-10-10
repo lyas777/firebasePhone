@@ -5,14 +5,7 @@
 export const environment = {
   production: false,
   firebase : {
-    apiKey: "AIzaSyBGT3VH-pGoTEtY9xVAyS0z76Dm08o_EIk",
-    authDomain: "randomstore-28366.firebaseapp.com",
-    databaseURL: "https://randomstore-28366.firebaseio.com",
-    projectId: "randomstore-28366",
-    storageBucket: "randomstore-28366.appspot.com",
-    messagingSenderId: "212371467067",
-    appId: "1:212371467067:web:87b541a03828c8f697251e",
-    measurementId: "G-G9M2QZJVZH",
+    apiKey: 'aqui va firebaseConfig de tu proyecto',
   }
 };
 
@@ -24,4 +17,3 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
-import * as firebase from 'firebase';
