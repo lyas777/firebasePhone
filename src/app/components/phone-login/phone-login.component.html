@@ -11,7 +11,7 @@
     <br>
     <div>
         <form [formGroup]="code">
-            <label for="code">Enter your Verification Code Here</label><br>
+            <label for="code">Ingresa el código de verificación: </label><br>
             <input formControlName="codeVerification" type="text" name="code" id="" class="input"><br>
             <button [disabled]="disableOTPSendButton" (click)=" verifyOTP()">Validar</button>
         </form>
